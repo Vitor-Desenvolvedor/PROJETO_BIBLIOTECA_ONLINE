@@ -3,27 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/Biblioteca_icone.png">
     <title>Biblioteca Digital</title>
 </head>
 <body>
     <header>
+        <section class="area-titulo">
         <div class="area-logo">
             <img src="img/logo.png" alt="Logo indisponível">
         </div>
+        <div class="titulo">
+            <h1>Biblioteca Digital</h1>
+        </div>
+        </section>
+        <nav>
+            <ul>
+                <li>Pesquisar</li>
+                <li>Cadastrar</li>
+                <li>Relatórios</li>
+            </ul>
+        </nav>
     </header>
-    <h1>Inserir Novo usuário</h1>
-    <form action="inserir.php" method="POST">
-        <label>Nome:<input type="text" name="nome"></label><br><br>
-        <label>Idade:<input type="text" name="idade"></label><br><br>
-        <input type="submit" value="Inserir">
-    </form>
-
-    <h1>Excluir usuário</h1>
-    <form action="excluir.php" method="POST">
-        <label>Código do Usuário:<input type="text" name="id_excluir"></label><br><br>
-        <input type="submit" value="Excluir">
-    </form>
+   
 
 
 <div class="php">
@@ -57,5 +59,6 @@ if($resultado->num_rows > 0){
 
 ?>
 </div>
+    <footer class="rodape" >Desenvolvido por Vitor-Desenvolvedor, &copy; Todos os direitos reservados</footer>
 </body>
 </html>

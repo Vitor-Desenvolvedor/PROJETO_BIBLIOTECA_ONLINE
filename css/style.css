@@ -1,0 +1,114 @@
+   /***********************************/
+  /* Estilização da página principal */
+ /*         Mobile - First          */
+/***********************************/
+
+/* Corpo da página */
+body {
+    background-color: rgba(70, 42, 104, 1.00);
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabeçalho */
+header {
+    align-items: center;
+    background-color: rgba(109, 65, 161, 1.00);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* Área do título */
+.area-titulo {
+    /*border: solid;*/
+    display: flex;
+    width: 100vw;
+}
+
+/* Título */
+.titulo {
+    align-items: center;
+    /*border: solid;*/
+    display: flex;
+    font-size: 3rem;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+}
+
+/* Área do logotipo */
+.area-logo {
+    align-items: center;
+    /*border: solid;*/
+    display: flex;
+    width: 20%;
+}
+
+/* Imagem logo*/
+.area-logo img {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+}
+
+/* Área de navegação */
+nav {
+    align-items: center;
+    border-top: solid 1px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Menu da lista de navegação */
+nav ul {
+    /*border: solid;*/
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 40%;
+}
+
+nav ul li {
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Rodapé */
+.rodape {
+    align-items: center;
+    background-color: rgba(109, 65, 161, 1.00);
+    bottom: 0;
+    color: white;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    width: 100vw;
+}
