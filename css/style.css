@@ -79,6 +79,14 @@ nav ul li {
 }
 
 
+/* Card principal */
+.card-principal {
+    background-color: rgba(109, 65, 161, 1.00);
+    position: absolute;
+    height: 50vh;
+    width: 50vw;
+}
+
 
 
 

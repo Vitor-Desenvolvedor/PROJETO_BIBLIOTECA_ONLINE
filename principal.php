@@ -25,40 +25,32 @@
             </ul>
         </nav>
     </header>
-    
+    <main class="card-principal">
+        <section class="pesquisar">
+            <div class="titulo-pesquisar">
+                <h1> Pesquisar livros </h1>
+            </div>
+
+        </section>
+        <section class="cadastro">
+            <div class="tilulo-cadastro">
+                <h1> Cadastrar </h1>
+            </div>
+
+        </section>
+        <section class="relatorios">
+            <div class="titulo-relatorios">
+                <h1> Relatórios </h1>
+            </div>
+
+        </section>
+        
+
+    </main>
    
 
 
-<div class="php">
-<?php
 
-// Incluir a pagina de conexão do banco de dados
-include 'conexao.php';
-
-// Listar usuários cadastrados no sistema
-
-$sqlListar = "SELECT * FROM usuário";
-$resultado = $conexao -> query($sqlListar);
-
-// Condicionamento para listar
-if($resultado->num_rows > 0){
-
-    echo "<ul>";
-    while($linha = $resultado->fetch_assoc()){
-
-        echo "<li> Código:".$linha['Código']."| Nome:".$linha['Nome']."| Idade:".$linha['idade']."</li>";
-
-    }
-
-    echo "</ul>";
-
-} else {
-
-    echo "Nenhum valor encontrado!";
-
-}
-
-?>
 </div>
     <footer class="rodape" >Desenvolvido por Vitor-Desenvolvedor, &copy; Todos os direitos reservados</footer>
 </body>
