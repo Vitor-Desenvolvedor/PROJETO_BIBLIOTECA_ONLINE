@@ -26,24 +26,46 @@
         </nav>
     </header>
     <main class="card-principal">
-        <section class="pesquisar">
+       <!-- <section class="pesquisar">
             <div class="titulo-pesquisar">
                 <h1> Pesquisar livros </h1>
-            </div>
+            </div> -->
 
         </section>
         <section class="cadastro">
             <div class="tilulo-cadastro">
                 <h1> Cadastrar </h1>
             </div>
+            <div class="cadastrar">
+                <ul>
+                    <li><label>Título: <input type="text" name="titulo"></label></li>
+                    <li><label>Autor: <input type="text" name="autor"></label></li>
+                    <li><label>Gênero: 
+                        <select name="genero">
+                        <option value="" disabled selected>Selecione um gênero</option>
+                        <option value="Ficção">Ficção</option>
+                        <option value="Suspense">Suspense</option>
+                        <option value="Romance">Romance</option>
+                        </select>
+                    </label></li>
+                    <li><label>Idioma: 
+                        <ul>
+                        <li><label><input type="radio" name="idioma"> Portugês</label></li>
+                        <li><label><input type="radio" name="idioma"> Inglês</label></li>
+                        <li><label><input type="radio" name="idioma"> Espanhol</label></li>
+                        <li><label><input type="radio" name="idioma"> Outra</label></li>
+                        </ul>
+                    </label></li>
+                </ul>
+            </div>
 
         </section>
-        <section class="relatorios">
+      <!--  <section class="relatorios">
             <div class="titulo-relatorios">
                 <h1> Relatórios </h1>
             </div>
 
-        </section>
+        </section> -->
         
 
     </main>
