@@ -5,8 +5,19 @@
 
 /* Corpo da página */
 body {
+    align-items: center;
     background-color: rgba(70, 42, 104, 1.00);
     color: white;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.container-principal {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
 }
@@ -81,10 +92,37 @@ nav ul li {
 
 /* Card principal */
 .card-principal {
+    align-items: center;
     background-color: rgba(109, 65, 161, 1.00);
-    position: absolute;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
     height: 50vh;
-    width: 50vw;
+    margin: 50px 0px 0px 0px;
+    width: 70vw;
+}
+
+/* Área de cadastro */
+.cadastro {
+    border: solid 2px;
+        
+} & ul {
+    list-style: none;
+}
+
+/**/
+ 
+/* Área dos códigos php */
+.funcoes-php {
+    align-items: center;
+    /*border: solid 2px;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 10vh;
+    width: 20vh;
 }
 
 

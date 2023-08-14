@@ -1,14 +1,13 @@
 <?php
 
-
-
 //if($_SERVER['REQUEST_METHOD'] === 'POST' ){
+
     //criacao de variaveis para conexao com o banco de dados
 
     $host = 'localhost';
     $usuario = 'root';
     $senha = '';
-    $banco = 'db_teste2';
+    $banco = 'db_biblioteca_digital';
 
     //Criacao de conexao com o banco de dados
 
@@ -19,7 +18,10 @@
     if($conexao->connect_error){
 
         die('Erro de conexao: '.$conexao->connect_error);
-    }        
+
+    } else {
+        echo "Database - OK ✔";
+    }       
    
 //}
 

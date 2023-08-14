@@ -8,6 +8,7 @@
     <title>Biblioteca Digital</title>
 </head>
 <body>
+    <section class="container-principal">
     <header>
         <section class="area-titulo">
         <div class="area-logo">
@@ -29,14 +30,15 @@
        <!-- <section class="pesquisar">
             <div class="titulo-pesquisar">
                 <h1> Pesquisar livros </h1>
-            </div> -->
+            </div> 
 
-        </section>
+        </section>-->
         <section class="cadastro">
             <div class="tilulo-cadastro">
                 <h1> Cadastrar </h1>
             </div>
             <div class="cadastrar">
+                <form action="cadastrar.php">
                 <ul>
                     <li><label>Título: <input type="text" name="titulo"></label></li>
                     <li><label>Autor: <input type="text" name="autor"></label></li>
@@ -55,8 +57,10 @@
                         <li><label><input type="radio" name="idioma"> Espanhol</label></li>
                         <li><label><input type="radio" name="idioma"> Outra</label></li>
                         </ul>
-                    </label></li>
+                    </label></li>                    
                 </ul>
+                <input type="submit" value="Confirmar">
+                </form>
             </div>
 
         </section>
@@ -66,14 +70,28 @@
             </div>
 
         </section> -->
-        
+        <section class="funcoes-php">
+            <?php
+                // Incluir código para testar conexão
+                //include 'conexao.php';
 
+                // Incluir código de cadastro
+                include 'cadastrar.php';
+
+                // Incluir código de pesquisa
+                //include 'pesquisar.php';
+
+                // Incluir código de relatórios
+                //include 'relatorios.php';
+
+                //criacao de variaveis para conexao com o banco de dados
+    
+            ?>
+        </section>
     </main>
-   
-
-
 
 </div>
     <footer class="rodape" >Desenvolvido por Vitor-Desenvolvedor, &copy; Todos os direitos reservados</footer>
+    </section>
 </body>
 </html>

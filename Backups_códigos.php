@@ -30,3 +30,17 @@ if($resultado->num_rows > 0){
 }
 
 ?>
+
+<!-- Comando para inserir os dados inseridos -->
+<h1>Inserir Novo usuário</h1>
+    <form action="inserir.php" method="POST">
+        <label>Nome:<input type="text" name="nome"></label><br><br>
+        <label>Idade:<input type="text" name="idade"></label><br><br>
+        <input type="submit" value="Inserir">
+    </form>
+
+    <h1>Excluir usuário</h1>
+    <form action="excluir.php" method="POST">
+        <label>Código do Usuário:<input type="text" name="id_excluir"></label><br><br>
+        <input type="submit" value="Excluir">
+    </form>
