@@ -89,6 +89,10 @@ nav ul li {
     font-size: 1.5rem;
 }
 
+nav a {
+    color: white;
+}
+
 
 /* Card principal */
 .card-principal {
@@ -211,11 +215,11 @@ nav ul li {
 /* CSS Botão de cadastrar personalizado*/
 .button-56 {
   align-items: center;
-  background-color: #fee6e3;
-  border: 2px solid #111;
+  background-color: rgba(70, 42, 104, 1.00);
+  border: 2px solid white;
   border-radius: 8px;
   box-sizing: border-box;
-  color: #111;
+  color: white;
   cursor: pointer;
   display: flex;
   font-family: Inter,sans-serif;
@@ -253,7 +257,7 @@ nav ul li {
 }
 
 .button-56:active {
-  background-color: #ffdeda;
+  background-color: rgba(109, 65, 161, 1.00);
   outline: 0;
 }
 
