@@ -39,19 +39,19 @@
             </div>
             <div class="cadastrar">
                 <form action="cadastrar.php" method="POST">
-                <ul>
-                    <li><label>Título: <input type="text" name="titulo"></label></li>
-                    <li><label>Autor: <input type="text" name="autor"></label></li>
-                    <li><label>Gênero: 
+                <ul class="lista-principal">
+                    <li><label class="label-e">*Título: </label><input type="text" name="titulo"></li>
+                    <li><label class="label-e">*Autor: </label><input type="text" name="autor"></li>
+                    <li><label class="label-e">Gênero: </label>
                         <select name="genero">
                         <option value="" disabled selected>Selecione um gênero</option>
                         <option value="Ficção">Ficção</option>
                         <option value="Suspense">Suspense</option>
                         <option value="Romance">Romance</option>
                         </select>
-                    </label></li>
-                    <li class="lista-idiomas"><label>Idioma:</label>
-                        <ul>
+                    </li>
+                    <li class="secao-idiomas"><label class="label-e">*Idioma:</label>
+                        <ul class="lista-idiomas">
                         <li><label><input type="radio" name="idioma" value="Português"> Português</label></li>
                         <li><label><input type="radio" name="idioma" value="Inglês"> Inglês</label></li>
                         <li><label><input type="radio" name="idioma" value="Espanhol"> Espanhol</label></li>

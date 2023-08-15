@@ -108,15 +108,70 @@ nav ul li {
 .cadastro {
     /*border: solid 2px;*/
     margin: 0;    
-} & ul {
+} 
+
+/* Lista principal colunas - inputs digitaveis e selecionaveis */
+.lista-principal {
+    /*border: solid;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.5rem;
     list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 35vw;
+} 
+
+/* Lista principal colunas - inputs digitaveis e selecionaveis */
+.lista-principal ul li {
+    /*border: solid;*/
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 15vw;
+}
+
+/* Ajuste dos inputs da lista principal */
+.lista-principal input {
     margin: 0;
     padding: 0;
 }
 
+/* Ajuste dos selects da lista principal */
+.lista-principal select {
+    /*border: solid 5px;*/
+    display: inline;
+    margin: 0;
+    padding: 0;
+}
+
+/* Conteúdo do label identificação em texto da lista principal */
+/*.lista-principal label {
+    border: solid;
+    width: 25vw;
+   
+}*/
+
+/* Ajustar espaçamento entre label e input */
+.label-e {
+    /*border: solid;*/
+    display: inline-block;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    width: 9.5vw;
+}
+
+/* Ajuste das fontes dos idiomas */
+
+
 /* Cadastrar livros */
 .cadastrar {
+    align-items: center;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* Título da seção do cadastro */
@@ -127,13 +182,23 @@ nav ul li {
     padding: 0;
 }
 
+/* Seção de idiomas */
+.secao-idiomas {
+    display: flex;
+}
+
 /* Lista de opções de idiomas */
 .lista-idiomas {
     /*border: solid;*/
     display: flex;
-} /*& ul {
-    border: solid;
-}*/
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+} 
+
+.lista-idiomas ul li {
+    list-style: none;
+}
 
 /* Área do botão de cadastrar */
 .botao-cadastrar {
