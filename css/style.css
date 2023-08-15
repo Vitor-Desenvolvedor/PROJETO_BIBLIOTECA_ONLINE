@@ -106,13 +106,43 @@ nav ul li {
 
 /* Área de cadastro */
 .cadastro {
-    border: solid 2px;
-        
+    /*border: solid 2px;*/
+    margin: 0;    
 } & ul {
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-/**/
+/* Cadastrar livros */
+.cadastrar {
+    display: flex;
+}
+
+/* Título da seção do cadastro */
+.titulo-cadastro h1 {
+    border-bottom: solid;
+    font-size: 4rem;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+/* Lista de opções de idiomas */
+.lista-idiomas {
+    /*border: solid;*/
+    display: flex;
+} /*& ul {
+    border: solid;
+}*/
+
+/* Área do botão de cadastrar */
+.botao-cadastrar {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0px 0px 0px;
+}
  
 /* Área dos códigos php */
 .funcoes-php {

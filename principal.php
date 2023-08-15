@@ -34,11 +34,11 @@
 
         </section>-->
         <section class="cadastro">
-            <div class="tilulo-cadastro">
-                <h1> Cadastrar </h1>
+            <div class="titulo-cadastro">
+                <h1> Cadastrar 📝</h1>
             </div>
             <div class="cadastrar">
-                <form action="cadastrar.php">
+                <form action="cadastrar.php" method="POST">
                 <ul>
                     <li><label>Título: <input type="text" name="titulo"></label></li>
                     <li><label>Autor: <input type="text" name="autor"></label></li>
@@ -50,16 +50,18 @@
                         <option value="Romance">Romance</option>
                         </select>
                     </label></li>
-                    <li><label>Idioma: 
+                    <li class="lista-idiomas"><label>Idioma:</label>
                         <ul>
-                        <li><label><input type="radio" name="idioma"> Portugês</label></li>
-                        <li><label><input type="radio" name="idioma"> Inglês</label></li>
-                        <li><label><input type="radio" name="idioma"> Espanhol</label></li>
-                        <li><label><input type="radio" name="idioma"> Outra</label></li>
+                        <li><label><input type="radio" name="idioma" value="Português"> Português</label></li>
+                        <li><label><input type="radio" name="idioma" value="Inglês"> Inglês</label></li>
+                        <li><label><input type="radio" name="idioma" value="Espanhol"> Espanhol</label></li>
+                        <li><label><input type="radio" name="idioma" value="Outra"> Outra</label></li>
                         </ul>
-                    </label></li>                    
+                    </li>                    
                 </ul>
-                <input type="submit" value="Confirmar">
+                <div class="botao-cadastrar">
+                <input type="submit" value="Cadastrar">
+                </div>
                 </form>
             </div>
 

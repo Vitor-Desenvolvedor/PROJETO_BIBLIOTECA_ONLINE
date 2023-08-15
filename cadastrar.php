@@ -14,12 +14,13 @@ include 'conexao.php';
         //Consulta SQL para inserir um novo registro 
 
         $sqlInserir = "INSERT INTO tbl_livros (titulo, autor, genero, idioma) VALUES('$novoTitulo','$novoAutor','$novoGenero','$novoIdioma')";
-
+        
         if($conexao->query($sqlInserir) === TRUE ){
 
             //echo "Novo registro inserido com sucesso!";
             header ("location: principal.php");
-        } else{
+
+        } else {
             echo "Erro ao inserir novo registro!";
         }
 
