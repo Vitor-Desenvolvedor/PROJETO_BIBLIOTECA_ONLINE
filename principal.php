@@ -60,7 +60,8 @@
                     </li>                    
                 </ul>
                 <div class="botao-cadastrar">
-                <input type="submit" value="Cadastrar">
+                <button class="button-56" role="button">Button 56</button>        
+                <input type="submit" value="Cadastrar" class="button-56">
                 </div>
                 </form>
             </div>
