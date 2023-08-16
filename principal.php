@@ -20,19 +20,24 @@
         </section>
         <nav>
             <ul>
-                <li><a href="pesquisar_livros.php">Pesquisar</a></li>
-                <li><a href="cadastrar_livros.php">Cadastrar</a></li>
+                <li><a href="#">Pesquisar</a></li>
+                <li><a href="#">Cadastrar</a></li>
                 <li><a href="#Relatorios">Relatórios</a></li>
             </ul>
         </nav>
     </header>
     <main class="card-principal">
-       <!-- <section class="pesquisar">
+        <section class="pesquisar">
             <div class="titulo-pesquisar">
                 <h1> Pesquisar livros </h1>
-            </div> 
+            </div>
+            <section class="lista-cadastrados">
+                <?php 
+                    include 'listar.php';
+                ?>
 
-        </section>-->
+            </section>
+        </section>
         <section class="cadastro">
             <div class="titulo-cadastro">
                 <h1> Cadastrar 📝</h1>

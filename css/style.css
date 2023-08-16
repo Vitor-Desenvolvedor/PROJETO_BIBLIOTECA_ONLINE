@@ -315,3 +315,12 @@ nav a {
     text-align: center;
     width: 100vw;
 }
+
+
+
+ /*************************************************/
+/* Exclusivo página de pesquisar */
+
+.lista-cadastrados {
+    border: solid;
+}
