@@ -334,7 +334,12 @@ nav a {
 
 /* Seção onde mostra os dados puxados do banco de dados */
 .lista-cadastrados {
-    border: solid;
+    align-items: center;
+    /*border: solid;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px 0 0 0;
 }
 
 /* Área de pesquisar ajustes */
@@ -365,4 +370,43 @@ nav a {
     list-style: none;
     margin: 0;
     padding: 0;
+}
+
+/* Tabela com lista de pesquisa */
+.tabela-lista-pesquisar {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.tabela-lista-pesquisar tr {
+    align-items: center;
+    /*border: solid;*/
+    display: flex;    
+    justify-content: center;    
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+.tabela-lista-pesquisar th {
+    align-items: center;
+    /*border: solid;*/
+    display: inline-block;
+    justify-content: center;    
+    margin: 0 0 5px 0;
+    padding: 0;
+    text-align: center;
+    width: 80px;
+}
+
+.tabela-lista-pesquisar td {
+    align-items: center;
+    /*border: solid;*/
+    display: inline-block;
+    justify-content: center;    
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 80px;
 }

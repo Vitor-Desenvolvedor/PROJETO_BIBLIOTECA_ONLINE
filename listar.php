@@ -30,15 +30,12 @@
     // Condicionamento para listar
     if($resultado->num_rows > 0){
 
-        echo "<ul>";
         while($linha = $resultado->fetch_assoc()){
         
-            echo "<li> Código:".$linha['codLivro']."| Título:".$linha['titulo']."| Autor:".$linha['autor']."| Gênero:".$linha['genero']."| Idioma:".$linha['idioma']." </li>";
+            echo "<td>".$linha['codLivro']."</td><td>".$linha['titulo']."</td><td>".$linha['autor']."</td><td>".$linha['genero']."</td><td>".$linha['idioma']."</td>";
 
         }
-
-        echo "</ul>";
-
+        
     } else {
 
         echo "Nenhum valor encontrado!";

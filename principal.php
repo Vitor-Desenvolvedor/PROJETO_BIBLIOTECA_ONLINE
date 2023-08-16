@@ -39,17 +39,23 @@
                 </svg>
             </div>
             <section class="lista-cadastrados">
-                <ul class="cabecalho-lista-pesquisar">
-                    <li> Código </li>
-                    <li> Título </li>
-                    <li> Autor  </li>
-                    <li> Gênero </li>
-                    <li> Idioma </li>
-                </ul>
-                <?php 
-                    include 'listar.php';
-                ?>
-
+                <table class="tabela-lista-pesquisar">
+                    <tr>
+                        <th> Código </th>
+                        <th> Título </th>
+                        <th> Autor  </th>
+                        <th> Gênero </th>
+                        <th> Idioma </th>
+                        <th> Editar </th> 
+                    </tr>
+                    <tr>
+                        <?php 
+                            include 'listar.php';
+                        ?>
+                        <td><button></button><button></button></td>
+                    </tr>
+                    
+                </table>
             </section>
         </section>
 <!-- Seção desativada por enquanto - até finalizar a pesquisa -->
