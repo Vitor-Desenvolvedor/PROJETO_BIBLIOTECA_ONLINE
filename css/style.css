@@ -316,11 +316,53 @@ nav a {
     width: 100vw;
 }
 
+/**********************************************************************************/
+/* Espaço entre seções de pesquisa */
+.espaco-secoes {
+    display: flex;
+    position: relative;
+    border: solid;
+    margin: 50px 0 0 0;
+    padding: 50px;
+    height: 900px;
+}
+
 
 
  /*************************************************/
 /* Exclusivo página de pesquisar */
 
+/* Seção onde mostra os dados puxados do banco de dados */
 .lista-cadastrados {
     border: solid;
+}
+
+/* Área de pesquisar ajustes */
+.titulo-pesquisar h1 {
+    border-bottom: solid;
+    font-size: 4rem;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+/* Área da inserção de dados a ser pesquisados */
+.insercao-pesquisa {
+    align-items: center;
+    /*border: solid;*/
+    display: flex;
+    justify-content: center;
+    margin: 0 0 10px 0;
+}
+
+/* Barra de pesquisa */
+.barra-pesquisar {
+    border-radius: 5px;
+}
+
+/* Cabeçalho da lista de pesquisa */
+.cabecalho-lista-pesquisar {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
