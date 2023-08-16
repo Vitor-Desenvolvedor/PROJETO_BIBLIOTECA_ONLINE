@@ -360,8 +360,19 @@ nav a {
 }
 
 /* Barra de pesquisa */
-.barra-pesquisar {
+.barra-pesquisa {
     border-radius: 5px;
+}
+
+/* Botão confirmar pesquisa */
+.botao-pesquisa {
+    border: none;
+    background-color: rgba(109, 65, 161, 1.00);
+    color: white;
+}
+
+.botao-pesquisa:hover {
+    color: rgb(195, 0, 255);
 }
 
 /* Cabeçalho da lista de pesquisa */
@@ -383,6 +394,7 @@ nav a {
     align-items: center;
     /*border: solid;*/
     display: flex;    
+    
     justify-content: center;    
     margin: 0;
     padding: 0;
@@ -403,10 +415,24 @@ nav a {
 .tabela-lista-pesquisar td {
     align-items: center;
     /*border: solid;*/
-    display: inline-block;
+    /*display: inline-block;*/
     justify-content: center;    
     margin: 0;
     padding: 0;
     text-align: center;
     width: 80px;
+}
+
+
+
+/* Botões de editar */
+.botões-editar {
+    border: none;
+    background-color: rgba(109, 65, 161, 1.00);
+    color: white;
+}
+
+/* Mouse sobre o botão */
+.botões-editar:hover {
+    color: rgb(195, 0, 255);
 }

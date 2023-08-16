@@ -4,21 +4,20 @@
 include 'conexao.php';
 
 
-//Consulta SQL para excluir registro 
+    //Consulta SQL para excluir registro 
     
     if(isset($_POST['id_excluir'])){
-        $idExcluir = $_POST['id_excluir'];
+        $idExcluir = $_POST['codLivro'];
         echo $idExcluir;
-        $sqlExcluir = "DELETE FROM usuário WHERE Código = $idExcluir";
+        $sqlExcluir = "DELETE FROM tbl_livros WHERE codLivro = $idExcluir";
 
 
         if($conexao->query($sqlExcluir) === TRUE){
 
-            //echo "Registro Excluido com sucesso!";
+            echo "Registro Excluido com sucesso!";
             header ("location: principal.php");
         }else{
             echo "Erro ao excluir o registro".$conexao->error;
         }
     }
-
 ?>
