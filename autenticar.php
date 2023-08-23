@@ -15,7 +15,9 @@
             exit;
 
         } else {
-            
+            echo 'Usuário ou senha invalidos!';
+            header("location: login.php");
+                        
         }
 
     }

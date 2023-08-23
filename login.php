@@ -3,14 +3,14 @@
 <head>
     <!-- Inclua as metatags e folhas de estilo necessárias -->
     <title>Login</title>
-    <link rel="stylesheet" href="style_login.css">
+    <link rel="stylesheet" href="css/style_login.css">
 </head>
 <body>
     <div id="header" class="system-header">
         <a href="principal.php" class="logo-link">
-                <img id="logo" src="imagem/LOGO-BIBLIOTECA-MUNICIPAL.png" alt="Logo da Empresa">
+                <img id="logo" src="img/logo.png" alt="Logo da Empresa">
         </a>  
-        <h1>Sistema de Gerenciamento Bibiliotecário</h1>
+        <h1>Biblioteca Virtual</h1>
     </div>
     <div id="main-content">
         <form action="autenticar.php" method="POST">
@@ -20,6 +20,11 @@
             <input type="password" id="password" name="senha"><br>
             <input type="submit" value="Entrar">
         </form>
+        <div>
+            <?php 
+                include 'autenticar.php';
+            ?>
+        </div>
     </div>
 </body>
 </html>
