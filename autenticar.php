@@ -12,7 +12,12 @@
 
             $_SESSION['autenticado'] = TRUE;
             header("location: principal.php");
+            exit;
+
+        } else {
+            
         }
+
     }
 
 

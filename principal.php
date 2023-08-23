@@ -1,3 +1,11 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['autenticado']) || $_SESSION['autenticado'] !==TRUE){
+        header("location:login.php")
+        exit;
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
