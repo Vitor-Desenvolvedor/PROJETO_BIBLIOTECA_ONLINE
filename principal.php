@@ -43,7 +43,7 @@
                     <ul>
                         <li><a href="#Perfil">Perfil</a></li>
                         <li><a href="#NovaSenha">Nova Senha</a></li>
-                        <li><a href="#NovoUsuário">Novo Usuário</a></li>
+                        <li><a href="cadastrar_usuario.php">Novo Usuário</a></li>
                         <li><a href="logout.php">Sair</a></li>
                     </ul>
                 </div>

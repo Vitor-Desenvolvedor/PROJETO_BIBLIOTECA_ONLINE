@@ -97,6 +97,7 @@ form {
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: rgba(109, 65, 161, 1.00);
+    color: white;
 }
 
 label {

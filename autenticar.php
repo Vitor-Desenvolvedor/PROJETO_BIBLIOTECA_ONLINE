@@ -15,17 +15,14 @@
         if ($resultado -> num_rows === 1) {// se encontrou um usuário correspondente 
         
             $_SESSION['autenticado'] = true;
-            header("location: principal.php");
-            exit;
+                echo "Bem vindo!";
+            //header("location: principal.php");
+            //exit;
 
-        } else {
-
-            header("location: principal.php");
-            echo ("Usuário ou senha errados!");
-            
-        }
+        }   else {           
+                echo "<br>","Usuário ou senha errados!";
+            }
         
-
     }
 
     // Autenticação de usuario com variaveis internas do código:

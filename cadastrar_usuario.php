@@ -1,9 +1,16 @@
+<?php
+    session_start();
+    if(!isset($_SESSION['autenticado']) || $_SESSION['autenticado'] !== TRUE){
+    header("location:login.php");
+    exit;
+    }
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style_cadastrar_usuario.css">
     <link rel="icon" href="img/Biblioteca_icone.png">
     <title>Biblioteca Digital</title>
 </head>
@@ -35,29 +42,14 @@
         </section>-->
         <section class="cadastro">
             <div class="titulo-cadastro">
-                <h1> Cadastrar 📝</h1>
+                <h1> Cadastrar 🗿</h1>
             </div>
             <div class="cadastrar">
-                <form action="cadastrar.php" method="POST">
+                <form action="cadastrar_usuario.php" method="POST">
                 <ul class="lista-principal">
-                    <li><label class="label-e">*Título: </label><input type="text" name="titulo"></li>
-                    <li><label class="label-e">*Autor: </label><input type="text" name="autor"></li>
-                    <li><label class="label-e">Gênero: </label>
-                        <select name="genero">
-                        <option value="" disabled selected>Selecione um gênero</option>
-                        <option value="Ficção">Ficção</option>
-                        <option value="Suspense">Suspense</option>
-                        <option value="Romance">Romance</option>
-                        </select>
-                    </li>
-                    <li class="secao-idiomas"><label class="label-e">*Idioma:</label>
-                        <ul class="lista-idiomas">
-                        <li><label><input type="radio" name="idioma" value="Português"> Português</label></li>
-                        <li><label><input type="radio" name="idioma" value="Inglês"> Inglês</label></li>
-                        <li><label><input type="radio" name="idioma" value="Espanhol"> Espanhol</label></li>
-                        <li><label><input type="radio" name="idioma" value="Outra"> Outra</label></li>
-                        </ul>
-                    </li>                    
+                    <li><label class="label-e">*Crie seu ID de Usuário: </label><input type="text" name="novoUsuario"></li>
+                    <li><label class="label-e">*Crie sua senha: </label><input type="text" name="novaSenha"></li>
+                    <li><label class="label-e">*Confirmar senha:</label><input type="text" name="confirmarSenha"></li>                   
                 </ul>
                 <div class="botao-cadastrar">                       
                 <input type="submit" value="Cadastrar" class="button-56">
@@ -78,7 +70,7 @@
                 //include 'conexao.php';
 
                 // Incluir código de cadastro
-                include 'cadastrar.php';
+                include 'php/cadastrar_usuario_novo.php';
 
                 // Incluir código de pesquisa
                 //include 'pesquisar.php';

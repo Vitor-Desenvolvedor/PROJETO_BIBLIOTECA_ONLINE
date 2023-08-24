@@ -170,16 +170,16 @@ nav a {
     list-style: none;
     margin: 0;
     padding: 0;
-    width: 35vw;
+    width: auto;
 } 
 
 /* Lista principal colunas - inputs digitaveis e selecionaveis */
 .lista-principal ul li {
-    /*border: solid;*/
+    border: solid;
     list-style: none;
     margin: 0;
     padding: 0;
-    width: 15vw;
+    width: auto;
 }
 
 /* Ajuste dos inputs da lista principal */
@@ -190,20 +190,6 @@ nav a {
     padding: 0;
 }
 
-/* Ajuste dos selects da lista principal */
-.lista-principal select {
-    /*border: solid 5px;*/
-    display: inline;
-    margin: 0;
-    padding: 0;
-}
-
-/* Conteúdo do label identificação em texto da lista principal */
-/*.lista-principal label {
-    border: solid;
-    width: 25vw;
-   
-}*/
 
 /* Ajustar espaçamento entre label e input */
 .label-e {
@@ -212,10 +198,10 @@ nav a {
     flex-direction: row;
     margin: 0;
     padding: 0;
-    width: 9.5vw;
+    width: 30vw;
 }
 
-/* Cadastrar livros */
+/* Cadastrar Usuários */
 .cadastrar {
     align-items: center;
     display: flex;
@@ -231,23 +217,6 @@ nav a {
     padding: 0;
 }
 
-/* Seção de idiomas */
-.secao-idiomas {
-    display: flex;
-}
-
-/* Lista de opções de idiomas */
-.lista-idiomas {
-    /*border: solid;*/
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    padding: 0;
-} 
-
-.lista-idiomas ul li {
-    list-style: none;
-}
 
 /* Área do botão de cadastrar */
 .botao-cadastrar {
@@ -327,7 +296,7 @@ nav a {
     flex-direction: column;
     justify-content: center;
     height: 10vh;
-    width: 20vh;
+    width: auto;
 }
 
 
@@ -364,123 +333,5 @@ nav a {
     width: 100vw;
 }
 
-/**********************************************************************************/
-/* Espaço entre seções de pesquisa */
-.espaco-secoes {
-    display: flex;
-    position: relative;
-    border: solid;
-    margin: 50px 0 0 0;
-    padding: 50px;
-    height: 900px;
-}
 
 
-
- /*************************************************/
-/* Exclusivo página de pesquisar */
-
-/* Seção onde mostra os dados puxados do banco de dados */
-.lista-cadastrados {
-    align-items: center;
-    /*border: solid;*/
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 20px 0 0 0;
-}
-
-/* Área de pesquisar ajustes */
-.titulo-pesquisar h1 {
-    border-bottom: solid;
-    font-size: 4rem;
-    margin: 0 0 10px 0;
-    padding: 0;
-}
-
-/* Área da inserção de dados a ser pesquisados */
-.insercao-pesquisa {
-    align-items: center;
-    /*border: solid;*/
-    display: flex;
-    justify-content: center;
-    margin: 0 0 10px 0;
-}
-
-/* Barra de pesquisa */
-.barra-pesquisa {
-    border-radius: 5px;
-}
-
-/* Botão confirmar pesquisa */
-.botao-pesquisa {
-    border: none;
-    background-color: rgba(109, 65, 161, 1.00);
-    color: white;
-}
-
-.botao-pesquisa:hover {
-    color: rgb(195, 0, 255);
-}
-
-/* Cabeçalho da lista de pesquisa */
-.cabecalho-lista-pesquisar {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-/* Tabela com lista de pesquisa */
-.tabela-lista-pesquisar {
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.tabela-lista-pesquisar tr {
-    align-items: center;
-    /*border: solid;*/
-    display: flex;    
-    
-    justify-content: center;    
-    margin: 0;
-    padding: 0;
-    width: auto;
-}
-
-.tabela-lista-pesquisar th {
-    align-items: center;
-    /*border: solid;*/
-    display: inline-block;
-    justify-content: center;    
-    margin: 0 0 5px 0;
-    padding: 0;
-    text-align: center;
-    width: 80px;
-}
-
-.tabela-lista-pesquisar td {
-    align-items: center;
-    /*border: solid;*/
-    /*display: inline-block;*/
-    justify-content: center;    
-    margin: 0;
-    padding: 0;
-    text-align: center;
-    width: 80px;
-}
-
-
-
-/* Botões de editar */
-.botões-editar {
-    border: none;
-    background-color: rgba(109, 65, 161, 1.00);
-    color: white;
-}
-
-/* Mouse sobre o botão */
-.botões-editar:hover {
-    color: rgb(195, 0, 255);
-}

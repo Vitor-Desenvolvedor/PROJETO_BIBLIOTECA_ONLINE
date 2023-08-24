@@ -19,10 +19,25 @@
             <label for="password">Senha:</label>
             <input type="password" id="password" name="senha"><br>
             <input type="submit" value="Entrar">
-            <?php 
-                include 'autenticar.php';
-            ?>
         </form>  
     </div>
+    <section class="funcoes-php">
+            <?php
+                // Incluir código para testar conexão
+                //include 'conexao.php';
+
+                // Incluir código de cadastro
+                include 'autenticar.php';
+
+                // Incluir código de pesquisa
+                //include 'pesquisar.php';
+
+                // Incluir código de relatórios
+                //include 'relatorios.php';
+
+                //criacao de variaveis para conexao com o banco de dados
+    
+            ?>
+        </section>
 </body>
 </html>
