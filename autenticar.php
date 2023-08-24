@@ -1,4 +1,5 @@
 <?php
+    session_start();
 
     $usuariovalido = "teste";
     $senhavalida = "123";
@@ -15,12 +16,17 @@
             exit;
 
         } else {
+            //die('Usuário ou senha invalidos!');
             echo 'Usuário ou senha invalidos!';
-            header("location: login.php");
+            //header("location: login.php");
                         
         }
 
+        echo 'Usuário ou senha invalidos!';
+
     }
+
+    //echo 'Usuário ou senha invalidos!';
 
 
 ?>

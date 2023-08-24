@@ -19,12 +19,10 @@
             <label for="password">Senha:</label>
             <input type="password" id="password" name="senha"><br>
             <input type="submit" value="Entrar">
-        </form>
-        <div>
             <?php 
                 include 'autenticar.php';
             ?>
-        </div>
+        </form>  
     </div>
 </body>
 </html>

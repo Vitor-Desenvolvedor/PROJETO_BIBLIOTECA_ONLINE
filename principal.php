@@ -1,8 +1,8 @@
 <?php
     session_start();
-    if(!isset($_SESSION['autenticado']) || $_SESSION['autenticado'] !==TRUE){
-        header("location:login.php");
-        exit;
+    if(!isset($_SESSION['autenticado']) || $_SESSION['autenticado'] !== TRUE){
+    header("location:login.php");
+    exit;
     }
 ?>
 
@@ -32,7 +32,24 @@
                 <li><a href="cadastrar_livros.php">Cadastrar</a></li>
                 <li><a href="#Relatorios">Relatórios</a></li>
             </ul>
+            <div class="usuarios">
+                <div>
+                <a href="#Usuários">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                    </svg>Usuários</a>
+                </div>
+                <div class="sub-usuarios">
+                    <ul>
+                        <li><a href="#Perfil">Perfil</a></li>
+                        <li><a href="#NovaSenha">Nova Senha</a></li>
+                        <li><a href="#NovoUsuário">Novo Usuário</a></li>
+                        <li><a href="#Logout">Sair</a></li>
+                    </ul>
+                </div>
+            </div>
         </nav>
+
     </header>
     <main class="card-principal">
         <!-- Seção de pesquisa -->

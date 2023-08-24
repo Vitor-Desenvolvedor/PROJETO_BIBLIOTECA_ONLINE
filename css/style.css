@@ -82,15 +82,60 @@ nav ul {
     list-style: none;
     margin: 0;
     padding: 0;
+    text-decoration: none;
     width: 40%;
 }
 
 nav ul li {
     font-size: 1.5rem;
+    text-decoration: none;
 }
 
 nav a {
     color: white;
+    text-decoration: none;
+}
+
+/* Usuários e novos usuários */
+.usuarios {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /*border: solid;*/
+    position: absolute;
+    margin: 0px 0px 0px 700px;
+    padding: 0px;
+    width: auto;
+}
+
+.usuarios a {
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Sub menu dos usuarios */
+.sub-usuarios {
+    border: solid;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    margin: 350px 0px 0px -52px;
+    padding: 0;
+    position: absolute;    
+    width: 150px;
+}
+
+.sub-usuarios ul {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    position: relative;    
+    width: 150px;
 }
 
 
