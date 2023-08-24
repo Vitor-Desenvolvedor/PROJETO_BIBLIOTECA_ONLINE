@@ -1,7 +1,36 @@
 <?php
     session_start();
+    include 'conexao.php';
 
-    $usuariovalido = "teste";
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+        $usuarioInput = $_POST ['usuario'];
+        $senhaInput = $_POST ['senha'];
+
+        // Consulta SQL para buscar o usuário e senha no banco de dados
+
+        $sql = "SELECT * FROM tbl_usuarios WHERE usuario = '$usuarioInput' AND senha = '$senhaInput'";
+        $resultado = $conexao -> query ($sql);
+
+        if ($resultado -> num_rows === 1) {// se encontrou um usuário correspondente 
+        
+            $_SESSION['autenticado'] = true;
+            header("location: principal.php");
+            exit;
+
+        } else {
+
+            header("location: principal.php");
+            echo ("Usuário ou senha errados!");
+            
+        }
+        
+
+    }
+
+    // Autenticação de usuario com variaveis internas do código:
+
+    /*$usuariovalido = "teste";
     $senhavalida = "123";
 
     if($_SERVER['REQUEST_METHOD'] === 'POST'){
@@ -26,7 +55,9 @@
 
     }
 
-    //echo 'Usuário ou senha invalidos!';
+    //echo 'Usuário ou senha invalidos!'; */
+
+
 
 
 ?>
