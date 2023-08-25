@@ -15,8 +15,8 @@
         if ($resultado -> num_rows === 1) {// se encontrou um usuário correspondente 
         
             $_SESSION['autenticado'] = true;
-                echo "Bem vindo!";
-            //header("location: principal.php");
+               // echo "<br>","Bem vindo!";
+            header("location: principal.php");
             //exit;
 
         }   else {           
