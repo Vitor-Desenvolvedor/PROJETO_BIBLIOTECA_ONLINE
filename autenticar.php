@@ -1,9 +1,9 @@
 <?php
     session_start();
     include 'conexao.php';
+  
 
-    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {  
         $usuarioInput = $_POST ['usuario'];
         $senhaInput = $_POST ['senha'];
 
@@ -11,19 +11,26 @@
 
         $sql = "SELECT * FROM tbl_usuarios WHERE usuario = '$usuarioInput' AND senha = '$senhaInput'";
         $resultado = $conexao -> query ($sql);
+            
 
         if ($resultado -> num_rows === 1) {// se encontrou um usuário correspondente 
         
             $_SESSION['autenticado'] = true;
-               // echo "<br>","Bem vindo!";
+            
+            echo "<br>","Bem vindo!";
             header("location: principal.php");
             //exit;
 
-        }   else {           
-                echo "<br>","Usuário ou senha errados!";
-            }
+        }   else { 
+                          
+            echo "<br>","Usuário ou senha errados!";
+            // exit;
+            // header("location: login.php");
+
+            }         
+                
         
-    }
+    }            
 
     // Autenticação de usuario com variaveis internas do código:
 

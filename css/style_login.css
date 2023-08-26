@@ -196,3 +196,8 @@ th {
 td {
     text-align: left;
 }
+
+/* Area onde está incluso o código php que gera as mensagens de aviso */
+.funcoes-php {
+    color: white;
+}

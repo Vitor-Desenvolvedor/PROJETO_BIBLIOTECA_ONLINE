@@ -13,15 +13,16 @@
         <h1>Biblioteca Virtual</h1>
     </div>
     <div id="main-content">
-        <form action="autenticar.php" method="POST">
+        <form action="login.php" method="POST">
             <label for="username">Usuário:</label>
             <input type="text" id="username" name="usuario"><br>
             <label for="password">Senha:</label>
             <input type="password" id="password" name="senha"><br>
             <input type="submit" value="Entrar">
-        </form>  
-    </div>
-    <section class="funcoes-php">
+            <a href="cadastrar_usuario.php">Cadastrar novo usuário</a>
+            <iframe name="resultFrame" style="display:none;"></iframe>
+        </form> 
+        <section class="funcoes-php">
             <?php
                 // Incluir código para testar conexão
                 //include 'conexao.php';
@@ -38,6 +39,8 @@
                 //criacao de variaveis para conexao com o banco de dados
     
             ?>
-        </section>
+        </section> 
+    </div>
+    
 </body>
 </html>
