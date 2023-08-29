@@ -12,22 +12,28 @@
         $sql = "SELECT * FROM tbl_usuarios WHERE (usuario = '$usuarioInput') AND (senha = '$senhaInput')";
         $resultado = $conexao -> query ($sql);
             
+    
+        if ($sql == ("SELECT * FROM tbl_usuarios WHERE (usuario = '$usuarioInput') AND (senha = '$senhaInput')")){
 
-        if ($resultado -> num_rows === 1) {// se encontrou um usuário correspondente 
-        
-            $_SESSION['autenticado'] = true;
+
+            if ($resultado -> num_rows === 1) {// se encontrou um usuário correspondente 
             
-            echo "<br>","Bem vindo!";
-            header("location: principal.php");
-            //exit;
+                $_SESSION['autenticado'] = true;
+                
+                echo "<br>","Bem vindo!";
+                header("location: principal.php");
+                //exit;
 
-        }   else { 
-                          
-            echo "<br>","Usuário ou senha errados!";
-            // exit;
-            // header("location: login.php");
+            }   else { 
+                            
+                echo "<br>","Usuário ou senha errados!";
+                // exit;
+                // header("location: login.php");
 
-            }         
+                }         
+
+
+        }
                 
         
     }            
