@@ -13,8 +13,12 @@
         $resultado = $conexao -> query ($sql);
             
     
-        if ($usuarioInput === "'OR 1=1'" $senhaInput){
+        if ((($usuarioInput === "' or '1'='1") or ($usuarioInput === "' or '1'='1--")) or (($senhaInput === "' or '1'='1") or ($senhaInput === "' or '1'='1--"))){
 
+            echo "<br>","Te lascar!";                   
+
+
+        } else {
 
             if ($resultado -> num_rows === 1) {// se encontrou um usuário correspondente 
             
@@ -30,13 +34,27 @@
                 // exit;
                 // header("location: login.php");
 
-                }         
+                } 
 
 
         }
                 
         
-    }            
+    } 
+    
+    //  or ($usuarioInput === " ' or '1'='1--")) or (($senhaInput === " ' or '1'='1") or ($senhaInput === " ' or '1'='1--"))
+
+    // Teste SQL
+    //' or '1'='1-- // Usuário e senha
+
+    //' or '1'='1 // Somente no usuário e senha em branco
+    
+    
+    // Evitando SQL Injection com um código ajeitado
+    /*PreparedStatement statement = connection.prepareStatement("SELECT * FROM products WHERE category = ?");
+    statement.setString(1, input);
+    ResultSet resultSet = statement.executeQuery();*/
+
 
     // Autenticação de usuario com variaveis internas do código:
 
