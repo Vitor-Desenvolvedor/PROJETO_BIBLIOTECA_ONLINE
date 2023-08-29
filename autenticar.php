@@ -9,7 +9,7 @@
 
         // Consulta SQL para buscar o usuário e senha no banco de dados
 
-        $sql = "SELECT * FROM tbl_usuarios WHERE usuario = '$usuarioInput' AND senha = '$senhaInput'";
+        $sql = "SELECT * FROM tbl_usuarios WHERE (usuario = '$usuarioInput') AND (senha = '$senhaInput')";
         $resultado = $conexao -> query ($sql);
             
 
