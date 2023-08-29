@@ -117,15 +117,16 @@ nav a {
 
 /* Sub menu dos usuarios */
 .sub-usuarios {
+    background-color: rgba(109, 65, 161, 1.00);
     border: solid;
     display: flex;
     flex-direction: column;
-    height: 300px;
-    margin: 350px 0px 0px -52px;
+    height: 200px;
+    margin: 300px 0px 0px 0px;
     padding: 0;
     position: absolute;    
     width: 150px;
-    float: initial;
+    /*float: initial;*/
 }
 
 .sub-usuarios ul {
