@@ -13,7 +13,7 @@
         $resultado = $conexao -> query ($sql);
             
     
-        if ($sql == ("SELECT * FROM tbl_usuarios WHERE (usuario = '$usuarioInput') AND (senha = '$senhaInput')")){
+        if ($usuarioInput === "'OR 1=1'" $senhaInput){
 
 
             if ($resultado -> num_rows === 1) {// se encontrou um usuário correspondente 
