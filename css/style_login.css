@@ -198,7 +198,13 @@ td {
     text-align: left;
 }
 
+.opcoes {
+    color: white;
+}
+
 /* Area onde está incluso o código php que gera as mensagens de aviso */
 .funcoes-php {
     color: white;
 }
+
+

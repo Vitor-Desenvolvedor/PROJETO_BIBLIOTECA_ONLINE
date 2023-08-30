@@ -122,6 +122,10 @@ nav a:hover {
     width: auto;
 }
 
+.usuarios:hover .sub-usuarios{
+    display: block;
+}
+
 .usuarios a {
     text-decoration: none;
     align-items: center;
@@ -147,8 +151,8 @@ nav a:hover {
     display: none;
     font-size: 1rem;
     flex-direction: column;
-    height: 300px;
-    margin: 350px 0px 0px 0px;
+    height: 188px;
+    margin: 253px 0px 0px 0px;
     padding: 0px;
     position: absolute;    
     width: 180px;
@@ -168,6 +172,47 @@ nav a:hover {
     width: 180px;
 }
 
+/* Fundo dos links do submenu de usuários */
+.botão-perfil  {
+    border-radius: 10px;
+    padding: 10px 63px 10px 63px !important;
+}
+
+.botão-alterar-senha {
+    border-radius: 10px;
+    padding: 10px 23px 10px 23px !important;
+}
+
+.botão-novo-usuario {
+    border-radius: 10px;
+    padding: 10px 22px 10px 22px !important;
+}
+
+.botão-logout {
+    border-radius: 10px;
+    padding: 10px 70px 10px 70px !important;
+}
+
+/* Fundo dos links do submenu de usuários ao passar o mouse em cima */
+
+.botão-perfil:hover {
+    background-color: rgba(70, 42, 104, 1.00);
+}
+
+.botão-alterar-senha:hover {
+    background-color: rgba(70, 42, 104, 1.00);
+    
+}
+
+.botão-novo-usuario:hover {
+    background-color: rgba(70, 42, 104, 1.00);
+    
+}
+
+.botão-logout:hover {
+    background-color: rgba(70, 42, 104, 1.00);
+    
+}
 
 /* Card principal */
 .card-principal {

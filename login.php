@@ -19,7 +19,7 @@
             <label for="password">Senha:</label>
             <input type="password" id="password" name="senha"><br>
             <input type="submit" value="Entrar">
-            <a href="cadastrar_usuario.php">Cadastrar novo usuário</a>
+            <a href="cadastrar_usuario.php" class="opcoes">Cadastrar novo usuário</a>
             <iframe name="resultFrame" style="display:none;"></iframe>
         </form> 
         <section class="funcoes-php">
