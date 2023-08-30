@@ -41,13 +41,12 @@
                 </div>
                 <div class="sub-usuarios">
                     <ul>
-                        <li><a href="#Perfil">Perfil</a></li>
-                        <li><a href="#NovaSenha">Nova Senha</a></li>
-                        <li><a href="#NovoUsuário">Novo Usuário</a></li>
-                        <li><a href="logout.php">Sair</a></li>
+                        <li><a href="#Perfil" class="botão-perfil">Perfil</a></li>
+                        <li><a href="#NovaSenha" class="botão-alterar-senha">Alterar Senha</a></li>
+                        <li><a href="cadastrar_usuario.php" class="botão-novo-usuario">Novo Usuário</a></li>
+                        <li><a href="logout.php" class="botão-logout">Sair</a></li>
                     </ul>
                 </div>
-            </div>
         </nav>
 
     </header>
