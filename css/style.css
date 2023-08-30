@@ -71,6 +71,8 @@ nav {
     border-top: solid 1px;
     display: flex;
     justify-content: center;
+    margin: 0;
+    padding: 0;
     width: 100%;
 }
 
@@ -89,11 +91,23 @@ nav ul {
 nav ul li {
     font-size: 1.5rem;
     text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav a {
+    border: none;
     color: white;
     text-decoration: none;
+    margin: 0px 0px 0px 0px;
+    padding: 16px;
+}
+
+nav a:hover {
+    color: white;
+    background-color: rgba(70, 42, 104, 1.00);
+    text-decoration: none;
+    padding: 16px;
 }
 
 /* Usuários e novos usuários */
@@ -102,8 +116,8 @@ nav a {
     align-items: center;
     justify-content: space-between;
     /*border: solid;*/
-    position: absolute;
-    margin: 0px 0px 0px 700px;
+    position: relative;
+    margin: 0px 0px 0px 80px;
     padding: 0px;
     width: auto;
 }
@@ -113,31 +127,45 @@ nav a {
     align-items: center;
     display: flex;
     justify-content: space-between;
+    padding: 20px;
+}
+
+.usuarios a:hover {
+    background-color: rgba(70, 42, 104, 1.00);
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 /* Sub menu dos usuarios */
 .sub-usuarios {
     background-color: rgba(109, 65, 161, 1.00);
     border: solid;
-    display: flex;
+    border-radius: 10px;
+    display: none;
+    font-size: 1rem;
     flex-direction: column;
-    height: 200px;
-    margin: 300px 0px 0px 0px;
-    padding: 0;
+    height: 300px;
+    margin: 350px 0px 0px 0px;
+    padding: 0px;
     position: absolute;    
-    width: 150px;
-    /*float: initial;*/
+    width: 180px;
+    /*float: left;*/
+    z-index: 1;
 }
 
 .sub-usuarios ul {
     align-items: center;
     display: flex;
+    font-size: 1rem;
     flex-direction: column;
     justify-content: center;
     margin: 0;
     padding: 0;
     position: relative;    
-    width: 150px;
+    width: 180px;
 }
 
 
