@@ -174,22 +174,22 @@ nav a:hover {
 
 /* Fundo dos links do submenu de usuários */
 .botão-perfil  {
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
     padding: 10px 63px 10px 63px !important;
 }
 
 .botão-alterar-senha {
-    border-radius: 10px;
+    /*border-radius: 10px;*/
     padding: 10px 23px 10px 23px !important;
 }
 
 .botão-novo-usuario {
-    border-radius: 10px;
+    /*border-radius: 10px;*/
     padding: 10px 22px 10px 22px !important;
 }
 
 .botão-logout {
-    border-radius: 10px;
+    border-radius: 0px 0px 10px 10px;
     padding: 10px 70px 10px 70px !important;
 }
 
