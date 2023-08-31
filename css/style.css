@@ -174,7 +174,7 @@ nav a:hover {
 
 /* Fundo dos links do submenu de usuários */
 .botão-perfil  {
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 8px 8px 0px 0px;
     padding: 10px 63px 10px 63px !important;
 }
 
@@ -189,7 +189,7 @@ nav a:hover {
 }
 
 .botão-logout {
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 0px 0px 8px 8px;
     padding: 10px 70px 10px 70px !important;
 }
 
