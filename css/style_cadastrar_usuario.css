@@ -71,6 +71,8 @@ nav {
     border-top: solid 1px;
     display: flex;
     justify-content: center;
+    margin: 0;
+    padding: 0;
     width: 100%;
 }
 
@@ -89,11 +91,23 @@ nav ul {
 nav ul li {
     font-size: 1.5rem;
     text-decoration: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav a {
+    border: none;
     color: white;
     text-decoration: none;
+    margin: 0px 0px 0px 0px;
+    padding: 16px;
+}
+
+nav a:hover {
+    color: white;
+    background-color: rgba(70, 42, 104, 1.00);
+    text-decoration: none;
+    padding: 16px;
 }
 
 /* Usuários e novos usuários */
@@ -102,10 +116,14 @@ nav a {
     align-items: center;
     justify-content: space-between;
     /*border: solid;*/
-    position: absolute;
-    margin: 0px 0px 0px 700px;
+    position: relative;
+    margin: 0px 0px 0px 80px;
     padding: 0px;
     width: auto;
+}
+
+.usuarios:hover .sub-usuarios{
+    display: block;
 }
 
 .usuarios a {
@@ -113,31 +131,89 @@ nav a {
     align-items: center;
     display: flex;
     justify-content: space-between;
+    padding: 20px;
+}
+
+.usuarios a:hover {
+    background-color: rgba(70, 42, 104, 1.00);
+    text-decoration: none;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
 }
 
 /* Sub menu dos usuarios */
 .sub-usuarios {
+    background-color: rgba(109, 65, 161, 1.00);
     border: solid;
-    display: flex;
+    border-radius: 10px;
+    display: none;
+    font-size: 1rem;
     flex-direction: column;
-    height: 300px;
-    margin: 350px 0px 0px -52px;
-    padding: 0;
+    height: 188px;
+    margin: 253px 0px 0px 0px;
+    padding: 0px;
     position: absolute;    
-    width: 150px;
-    float: initial;
+    width: 180px;
+    /*float: left;*/
+    z-index: 1;
 }
 
 .sub-usuarios ul {
     align-items: center;
     display: flex;
+    font-size: 1rem;
     flex-direction: column;
     justify-content: center;
     margin: 0;
     padding: 0;
     position: relative;    
-    width: 150px;
+    width: 180px;
 }
+
+/* Fundo dos links do submenu de usuários */
+.botão-perfil  {
+    border-radius: 8px 8px 0px 0px;
+    padding: 10px 63px 10px 63px !important;
+}
+
+.botão-alterar-senha {
+    /*border-radius: 10px;*/
+    padding: 10px 23px 10px 23px !important;
+}
+
+.botão-novo-usuario {
+    /*border-radius: 10px;*/
+    padding: 10px 22px 10px 22px !important;
+}
+
+.botão-logout {
+    border-radius: 0px 0px 8px 8px;
+    padding: 10px 70px 10px 70px !important;
+}
+
+/* Fundo dos links do submenu de usuários ao passar o mouse em cima */
+
+.botão-perfil:hover {
+    background-color: rgba(70, 42, 104, 1.00);
+}
+
+.botão-alterar-senha:hover {
+    background-color: rgba(70, 42, 104, 1.00);
+    
+}
+
+.botão-novo-usuario:hover {
+    background-color: rgba(70, 42, 104, 1.00);
+    
+}
+
+.botão-logout:hover {
+    background-color: rgba(70, 42, 104, 1.00);
+    
+}
+
 
 
 /* Card principal */
