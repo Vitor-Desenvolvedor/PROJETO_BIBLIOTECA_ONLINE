@@ -16,8 +16,9 @@ include 'conexao.php';
         if ($conexao->query($sqlExcluir) === TRUE) {
 
             echo "<br>","Registro Excluido com sucesso!";
-            //header ("location: pesquisar_livros.php");
+            header ("location: pesquisar_livros.php");
         } else {
+            header ("location: pesquisar_livros.php");
             echo "<br>","Erro ao excluir o registro".$conexao->error;
         }
     }
