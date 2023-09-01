@@ -53,7 +53,7 @@
                 <h1> Cadastrar 📝</h1>
             </div>
             <div class="cadastrar">
-                <form action="cadastrar.php" method="POST">
+                <form action="cadastrar_livros.php" method="POST">
                 <ul class="lista-principal">
                     <li><label class="label-e">*Título: </label><input type="text" name="titulo"></li>
                     <li><label class="label-e">*Autor: </label><input type="text" name="autor"></li>
