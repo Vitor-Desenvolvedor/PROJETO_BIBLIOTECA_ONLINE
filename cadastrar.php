@@ -17,11 +17,12 @@ include 'conexao.php';
         
         if($conexao->query($sqlInserir) === TRUE ){
 
-            //echo "Novo registro inserido com sucesso!";
-            header ("location: principal.php");
+            echo "<br>","Novo registro inserido com sucesso!";
+            //header ("location: cadastrar_livros.php");
 
         } else {
-            echo "Erro ao inserir novo registro!";
+            //header ("location: cadastrar_livros.php");
+            echo "<br>","Erro ao inserir novo registro!";
         }
 
     }
