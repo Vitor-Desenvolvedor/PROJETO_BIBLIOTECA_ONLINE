@@ -400,8 +400,9 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     height: 10vh;
-    width: 20vh;
+    width: 30vw;
 }
 
 
