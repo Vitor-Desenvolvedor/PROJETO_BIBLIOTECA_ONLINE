@@ -13,12 +13,12 @@ include 'conexao.php';
         $sqlExcluir = "DELETE FROM tbl_livros WHERE codLivro = $idExcluir";
 
 
-        if($conexao->query($sqlExcluir) === TRUE){
+        if ($conexao->query($sqlExcluir) === TRUE) {
 
-            echo "Registro Excluido com sucesso!";
-            header ("location: principal.php");
-        }else{
-            echo "Erro ao excluir o registro".$conexao->error;
+            echo "<br>","Registro Excluido com sucesso!";
+            //header ("location: pesquisar_livros.php");
+        } else {
+            echo "<br>","Erro ao excluir o registro".$conexao->error;
         }
     }
 ?>
