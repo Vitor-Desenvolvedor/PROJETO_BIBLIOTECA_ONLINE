@@ -64,7 +64,7 @@
                 </svg>
                 </button>
             </div>
-            <form action="excluir.php" method="POST" class="lista-cadastrados">
+            <form action="" method="POST" class="lista-cadastrados">
                 <table class="tabela-lista-pesquisar">
                     <tr>
                         <th> Código </th>
